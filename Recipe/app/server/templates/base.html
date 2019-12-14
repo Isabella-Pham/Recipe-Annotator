@@ -83,9 +83,9 @@
           </a>
           {% endif %}
           {% if not user.is_authenticated %}
-          <a class="navbar-item" href="{% url 'login' %}">
+          <!-- a class="navbar-item" href="{% url 'login' %}">
             <span>Login</span>
-          </a>
+          </a>-->
           {% else %}
           <a class="navbar-item" href="{% url 'logout' %}">
             <span>Logout</span>
@@ -97,7 +97,7 @@
   </nav>
 
   {% block content %}{% endblock %}
-  
+
   {% block footer %}{% endblock %}
 </body>
 </html>
